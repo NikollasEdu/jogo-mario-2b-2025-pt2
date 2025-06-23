@@ -1,5 +1,6 @@
-const mario = document.querySelector(".mario")
-const pipe = document.querySelector(".pipe")
+const mario = document.querySelector(".mario");
+const pipe = document.querySelector(".pipe");
+const nuvem = document.querySelector(".nuvem");
 const startButton = document.queySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
 
@@ -15,7 +16,6 @@ const startGame = () => {
   pipe.style.opacity = "1";
   nuvem.style.opacity = "1";
 }
-
 
 const jump = () => {
     mario.classList.add("jump");
