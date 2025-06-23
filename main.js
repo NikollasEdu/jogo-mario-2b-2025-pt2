@@ -17,6 +17,7 @@ const startGame = () => {
   nuvem.style.opacity = "1";
 }
 
+
 const jump = () => {
     mario.classList.add("jump");
 
@@ -42,7 +43,9 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
         mario.style.marginLeft = "50px";
 
         clearInterval(loop);
-    }
+        gameOverScreen.style.display = "flex";
+      }  else if (pipePosition < 0 && gamestarted) {
+      pipe.style.left = '';
 },10);
 
 document.addEventListener("keydown", jump);
