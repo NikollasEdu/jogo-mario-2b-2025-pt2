@@ -44,8 +44,9 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
 
         clearInterval(loop);
         gameOverScreen.style.display = "flex";
-      }  else if (pipePosition < 0 && gamestarted) {
+    } else if (pipePosition < 0 && gamestarted) {
       pipe.style.left = '';
+    }
 },10);
 
 document.addEventListener("keydown", jump);
