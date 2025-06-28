@@ -48,7 +48,7 @@ button {
   font-weight: bold;
   font-size: 1.5rem;
   border: none;
-  padding: 1re,;
+  padding: 1rem;
   position: absolute;
   right: 50vw;
   top: 50vh;
@@ -62,7 +62,7 @@ button:hover {
   color: green;
 }
 
-buttom.Start {
+button.Start {
   display: block;
 }
 
