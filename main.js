@@ -1,11 +1,11 @@
 const mario = document.querySelector(".mario");
 const pipe = document.querySelector(".pipe");
 const nuvem = document.querySelector(".nuvem");
-const startButton = document.queySelector(".start");
+const startButton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
 
 
-audioStart = new Audio("./sound/audio_theme.mp3");
+const audioStart = new Audio("./sound/audio_theme.mp3");
 const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
@@ -52,7 +52,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
 
         clearInterval(loop);
         gameOverScreen.style.display = "flex";
-   }     else if (pipePosition < 0 && gamestarted) {
+   }     else if (pipePosition < 0 && gameStarted) {
         pipe.style.left = '';
    }
 },10);
