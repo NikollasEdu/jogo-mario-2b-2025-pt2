@@ -32,6 +32,13 @@ const jump = () => {
     ,500);
 }
 
+const updateScore = () => {
+  score += 1;
+  scoreElement.textContent = score;
+  const animantionSpeed = 1.5/ (1 score/500);
+  pipe.style.animation = pipe-animation ${animationSpeed}s infinite linear;
+}
+
 const loop = setInterval(() => {
 const pipePosition = pipe.offsetLeft;
 const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
@@ -53,6 +60,7 @@ const marioPosition = +window.getComputedStyle(mario).bottom.replace("px", "");
         clearInterval(loop);
         gameOverScreen.style.display = "flex";
    }     else if (pipePosition < 0 && gameStarted) {
+        updateScore();
         pipe.style.left = '';
    }
 },10);
