@@ -12,15 +12,15 @@ let gameStarted = false;
 let score = 0;
 
 const startGame = () => {
-   gameStarted = true;
-   audioStart.play();
+    gameStarted = true;
+    audioStart.play();
 
-   pipe.style.animation = "pipe-animation 1.5s infinite linear";
+    pipe.style.animation = "pipe-animation 1.5s infinite linear";
 
-   startButton.style.display = "none";
-   mario.style.opacity = "1";
-   pipe.style.opacity = "1";
-   nuvem.style.opacity = "1";
+    startButton.style.display = "none";
+    mario.style.opacity = "1";
+    pipe.style.opacity = "1";
+    nuvem.style.opacity = "1";
 }
 
 
