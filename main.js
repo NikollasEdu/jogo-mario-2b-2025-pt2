@@ -3,23 +3,24 @@ const pipe = document.querySelector(".pipe");
 const nuvem = document.querySelector(".nuvem");
 const startButton = document.querySelector(".start");
 const gameOverScreen = document.querySelector(".game-over");
+const scoreElement = document.querySelector(".score")
 
-
-const audioStart = new Audio("./sound/audio_theme.mp3");
+audioStart = new Audio("./sound/audio_theme.mp3");
 const gameOverSound = new Audio("./sound/audio_gameover.mp3");
 
 let gameStarted = false;
+let score = 0;
 
 const startGame = () => {
-  gameStarted = true;
-  audioStart.play();
+   gameStarted = true;
+   audioStart.play();
 
-  pipe.style.animation = "pipe-animation 1.5s infinite linear";
+   pipe.style.animation = "pipe-animation 1.5s infinite linear";
 
-  startButton.style.display = "none";
-  mario.style.opacity = "1";
-  pipe.style.opacity = "1";
-  nuvem.style.opacity = "1";
+   startButton.style.display = "none";
+   mario.style.opacity = "1";
+   pipe.style.opacity = "1";
+   nuvem.style.opacity = "1";
 }
 
 
